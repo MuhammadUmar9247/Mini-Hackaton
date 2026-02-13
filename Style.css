@@ -23,7 +23,11 @@
     align-items: center;
     padding: 40px 0 30px;
   }
-  .logo { display: flex; align-items: center; gap: 12px; font-weight: bold; font-size: 1.6rem; }
+  .logo { display: flex; 
+    align-items:
+     center; gap: 12px; font-weight: bold;
+      font-size: 1.6rem; 
+    }
   .logo img { height: 38px; }
   .nav-links a {
     margin-left: 32px;
@@ -54,8 +58,14 @@
   }
   
   /* Labels */
-  .label-green { background: var(--green); padding: 4px 12px; border-radius: 10px; font-weight: 600; }
-  .label-white { background: white; padding: 4px 12px; border-radius: 10px; font-weight: 600; }
+  .label-green { background: var(--green); 
+    padding: 4px 12px; 
+    border-radius: 10px;
+     font-weight: 600; }
+  .label-white { background: white;
+     padding: 4px 12px; 
+     border-radius: 10px;
+      font-weight: 600; }
   
   /* Hero */
   .hero {
@@ -65,9 +75,16 @@
     align-items: center;
     padding: 60px 0 100px;
   }
-  .hero h1 { font-size: 3.8rem; line-height: 1.05; margin-bottom: 28px; }
-  .hero p { font-size: 1.25rem; margin-bottom: 40px; max-width: 480px; }
-  .hero-visual img { width: 100%; height: auto; border-radius: 20px; }
+  .hero h1 { font-size: 3.8rem;
+     line-height: 1.05;
+      margin-bottom: 28px; }
+  .hero p { font-size: 1.25rem;
+     margin-bottom: 40px; 
+     max-width: 480px; }
+  .hero-visual img { width: 100%;
+     height: auto;
+      border-radius: 20px; 
+    }
   
   /* Logo bar */
   .logo-bar {
@@ -84,9 +101,14 @@
   }
   
   /* Section header */
-  .section-header { text-align: center; margin-bottom: 60px; }
-  .section-header h2 { font-size: 2.8rem; margin-bottom: 16px; }
-  .section-header p { max-width: 620px; margin: 0 auto; font-size: 1.15rem; }
+  .section-header { text-align: center; 
+    margin-bottom: 60px; }
+  .section-header h2 { font-size: 2.8rem;
+     margin-bottom: 16px; }
+  .section-header p { max-width: 620px; margin:
+     0 auto; font-size: 1.15rem; }
+
+  
   
   /* Services */
   .services-grid {
@@ -254,9 +276,18 @@
     padding: 70px;
     box-shadow: var(--shadow);
   }
-  .radio-group { display: flex; gap: 40px; margin-bottom: 30px; }
-  .contact-info form { display: flex; flex-direction: column; gap: 18px; }
-  .contact-info label { font-weight: 600; margin-bottom: 6px; display: block; }
+  .radio-group { display: flex; 
+    gap: 40px;
+     margin-bottom: 30px;
+     }
+  .contact-info form { display: flex; 
+    flex-direction:
+    column; gap: 18px; 
+  }
+  .contact-info label { font-weight: 600; 
+    margin-bottom: 6px; 
+    display: block;
+   }
   .contact-info input, .contact-info textarea {
     padding: 16px 20px;
     border: var(--thick-border);
@@ -279,7 +310,9 @@
     max-width: 1400px;
     margin: 0 auto;
   }
-  .footer-brand h2 { color: var(--green); font-size: 2.2rem; margin-bottom: 20px; }
+  .footer-brand h2 { color: var(--green); 
+    font-size: 2.2rem;
+     margin-bottom: 20px; }
   .social-icons a {
     color: #ccc;
     font-size: 1.8rem;
@@ -287,8 +320,12 @@
     transition: color 0.2s;
   }
   .social-icons a:hover { color: var(--green); }
-  .footer-contact h3, .footer-newsletter h3 { color: white; margin-bottom: 20px; }
-  .footer-contact a { color: var(--green); }
+  .footer-contact h3,
+   .footer-newsletter h3
+    { color: white;
+     margin-bottom: 20px; }
+  .footer-contact a 
+  { color: var(--green); }
   .newsletter-form {
     display: flex;
     gap: 0;
@@ -320,6 +357,61 @@
   }
   
   /* Responsive */
+ /* ======================
+   DESKTOP STYLE
+====================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ======================
+   MOBILE STYLE
+====================== */
+
+@media (max-width: 768px) {
+
+  /* Hide desktop links */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 80px 30px;
+    gap: 20px;
+    transition: 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+  
   /* ========================= */
 /* GLOBAL RESPONSIVE FIX */
 /* ========================= */
