@@ -1,3 +1,3 @@
 # Mini-Hackaton
 Using HTML CSS and Javascipt
-Live Website Link : (https://mathematical-coffee-veyh16vvwi.edgeone.app/)
+Live Website Link : (https://deep-amethyst-wem2ig7fqn.edgeone.app/)
